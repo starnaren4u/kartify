@@ -1,7 +1,7 @@
 import os
 
 from dotenv import load_dotenv
-from kartify.agent.OrderAgent import run_chatbot
+from kartify.agent.ChatAgent import run_chatbot
 
 
 load_dotenv()

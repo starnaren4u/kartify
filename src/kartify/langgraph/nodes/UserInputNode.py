@@ -8,7 +8,11 @@ def user_input_node(state: OrderState):
                 state["cust_id"] = customer_id
                 break
             print("Customer ID cannot be blank.")
+    if state["final_response"]:
+        print(state["final_response"])
+        user_query = input("")
+    else:
+        user_query = input("How can I help you? ")
 
-    user_query = input("How can I help you? ")
     state["query"] = user_query
     return state

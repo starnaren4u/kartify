@@ -11,4 +11,5 @@ class OrderState(TypedDict):
     evaluation: Dict[str, float]
     guard_result: str
     conv_guard_result: str
+    agent_llm: any
     evaluate_llm : any
