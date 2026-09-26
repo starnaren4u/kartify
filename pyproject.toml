@@ -21,7 +21,10 @@ dependencies = [
 ]
 
 [project.scripts]
-kartify = "kartify.__main__:main"
+kartify = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
